@@ -1,0 +1,48 @@
+{
+  "generator-phovea": {
+    "type": "app",
+    "name": "clue_dummy",
+    "author": "The Caleydo Team",
+    "githubAccount": "caleydo",
+    "modules": [
+      "phovea_clue"
+    ],
+    "extensions": [
+      {
+        "type": "application",
+        "id": "clue_dummy",
+        "module": "",
+        "extras": {
+          "name": "CLUE Demo"
+        }
+      },
+      {
+        "type": "actionFactory",
+        "id": "clue_demo",
+        "module": "cmds",
+        "extras": {
+          "factory": "createCmd",
+          "creates": "(addClueElem|removeClueElem)"
+        }
+      }
+    ],
+    "sextensions": [],
+    "libraries": [],
+    "unknown": {
+      "requirements": [],
+      "debianPackages": [],
+      "redhatPackages": []
+    },
+    "app": "",
+    "entries": {
+      "app": "./src/index.ts"
+    },
+    "libraryAliases": {},
+    "libraryExternals": [
+      "marked"
+    ],
+    "ignores": [],
+    "today": "Sun, 06 Nov 2016 18:44:41 GMT",
+    "clientOnly": false
+  }
+}

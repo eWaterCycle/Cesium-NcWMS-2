@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    
+    <!-- <link rel="stylesheet" href="node_modules/cesium/Build/Cesium/Widgets/widgets.css" /> -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body> <!-- ng-app="eWaterCycleApp"> -->
+    <!-- The splash screen must be first -->
+    <div id="splash" ng-cloak>
+      <h2>Loading</h2>
+    </div>
+
+    <!-- Google analytics code to track useage stats -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61775345-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script lang="javascript">
+      CESIUM_BASE_URL = 'node_modules/cesium/Build/Cesium/';      
+    </script>
+  
+    <script src="./common.js"></script>
+    <script src="./app.js"></script>
+
+    <!-- Add your site or application content here -->
+    <!-- <project-logo-box-directive></project-logo-box-directive>
+
+    <ul class="nav-pills navbar-right-custom-top">
+        <li><cesium-fly-to-dropdown-directive></cesium-fly-to-dropdown-directive></li>
+        <li><cesium-viewmodel-dropdown-directive></cesium-viewmodel-dropdown-directive></li>
+        <li><dataset-directive></dataset-directive></li>
+        <li><palette-dropdown-directive></palette-dropdown-directive></li>
+        <li><logarithmic-toggle-directive activated="true"></logarithmic-toggle-directive></li>
+        <li><terrain-toggle-directive activated="false"></terrain-toggle-directive></li>
+        <li><outlines-toggle-directive></outlines-toggle-directive></li>
+        <li><help-directive></help-directive></li>
+    </ul>
+
+    <customgraph-directive activated="true" class="customgraph1"></customgraph-directive>
+
+    <big-legend-directive></big-legend-directive>
+    <logo-box-directive></logo-box-directive>
+
+    <cesium-viewer-directive id="cesiumContainer" ></cesium-viewer-directive>
+    <cesium-ncwms-layer-directive></cesium-ncwms-layer-directive>
+
+    <help-modal-directive></help-modal-directive> -->
+</body>
+</html>

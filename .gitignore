@@ -1,0 +1,13 @@
+/.tscache
+/.idea
+/build/
+/built/
+/src.bak/
+/dist/
+node_modules/
+/src/**/*.js
+!/src/clue_overrides/phovea.js
+/tests/**/*.js
+*.map
+*.css
+*.log

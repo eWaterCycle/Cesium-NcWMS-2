@@ -1,0 +1,33 @@
+/**
+ * Created by Samuel Gratzl on 27.08.2014.
+ */
+
+@import "styles/base";
+@import "./clue_overrides/style.scss";
+
+
+main.clue_demo {
+
+  div.block {
+    position: absolute;
+
+    div.body {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .toolbar {
+      text-align: right;
+      i:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+body:not([ data-clue = "E" ]) {
+  main.clue_demo div.block div.toolbar {
+    display: none;
+  }
+}

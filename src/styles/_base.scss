@@ -1,0 +1,71 @@
+body, html {
+  font-family: Yantramanav, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+th, label, strong, b, .label {
+  font-weight: 500 !important;
+}
+
+.gui {
+  background-color: rgb(136, 136, 136);
+  width: 200px;
+  right: 0;
+  top: 0;
+  bottom: 80px;
+  position: absolute;
+  overflow:hidden;
+  color: rgb(255, 255, 255);
+}
+
+.noSelectText{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.circle {
+  position: relative;
+  align-content: center;
+  background-color: #4c5fce;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding-bottom: 25%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  top: 5%;
+  left: 5%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.circle .dot {
+  position: absolute;
+  width: 5%;
+  height: 50%;
+  left: 0;
+  top: 0;
+  transform: translate(45px,47.5px);
+}
+.circle .dot:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+  width: 200%;
+  transform: translate3d(-25%, -25%, 0);
+  height: 0;
+  padding-bottom: 200%;
+  border-radius: 50%;
+  cursor: pointer;
+}
